@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
     margin: 0;
@@ -10,84 +16,61 @@ body {
     padding: 0;
 }
 
-.header {
+.container {
     background-color: rgba(150, 143, 143, 0.7);
     height: 20vh;
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.text-1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-}
-
-.flex-container {
-    border: 2px solid green;
-    display: flex;
-    flex-direction: row;
-    height: 40vh;
-
-}
-
-.text {
-    text-align: center;
-    background-color: blanchedalmond;
-    margin: 0;
-    padding: 0;
-}
-
-
-.f_container {
-    background-color: blanchedalmond;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    border: 2px red;
-}
-
-.flex_2 {
-    border: 1px solid olivedrab;
-    flex-grow: 1;
-    align-self: flex-end;
-    height: 30vh;
-    background-color: rgb(236, 195, 132);
-}
-
-article {
-    border: 1px solid rebeccapurple;
-    flex-grow: 1;
-}
-
-aside {
-    border: 1px solid peru;
-    background-color: rgba(119, 231, 119, 0.6);
-}
-
-.f-container {
+.row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 1;
-    height: 10vh;
-    justify-content: space-between;
-    background-color: rgba(150, 143, 143, 0.7);
-
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-.text_t {
-    text-align: center;
-    background-color: rgba(150, 143, 143, 0.7);
-    margin: 0;
-    padding: 0;
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-.flex {
-    align-self: center;
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
+.col_article,
+.col_aside {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col_aside {
+    flex: 0 0 33.333333%;
+    max-width: 33, 333333%;
+}
+
+.header {
+    background-color: #e0e0e0;
+}
+
+.col_article {
+    background-color: #fff8e1;
+}
+
+.col_aside {
+    background-color: #dcedc8;
+}
+
+.col_other_article {
+    flex: 1 0 0;
+    min-width: 300px;
+}
+
+.col_footer {
+    flex: 1 0 0;
+    min-width: 200px;
 }

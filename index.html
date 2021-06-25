@@ -12,35 +12,35 @@
 
 <body>
 
- <header class="header">
-   <h2 class="text-1">
-     {Шапка}
-  </h2>
-</header>
-  <main>
-    <div class="flex-container">
-<article>
-  <h2 class="text">{Основная часть}</h2>
-<div class="f_container">
-      <p class="flex_2">Еще 1</p>
-      <p class="flex_2">Еще 2</p>
-      <p class="flex_2">Еще 3</p>
+  <header class="container">
+    <div style="font-size: 20px; text-align:center; padding-top: 20px; padding-bottom: 20px; font-weight: bold;">
+    {Шапка cтраницы}</div>
+  </header>
+  <main class="container">
+    <div class="row">
+      <article class="col col_article">
+        <div
+        style="font-size: 20px; text-align:center; padding-top: 30px; padding-bottom: 30px; font-weight: bold;">
+        {Основная часть} </div>
+        <div class="row">
+          <div class="col col_ohter_article">Еще 1</div>
+          <div class="col col_ohter_article">Еще 2</div>
+          <div class="col col_ohter_article">Еще 3 </div>
+        </div>
+      </article>
+      <aside class="col col_aside">Боковая панель</aside>
     </div>
-    </article>
-<aside class="aside">Боковая панель</aside>
-  </div>
-</main>
-  <footer class="footer">
-    <h2 class="text_t">Подвал</h2>
-    <div class="f-container">
-      <p class="flex">Секция 1</p>
-    <p class="flex">Секция 2</p>
-    <p class="flex">Секция 3</p>
-    <p class="flex">Секция 4</p>
-  </div>
-  
+  </main>
+  <footer class="container">
+    Подвал
+    <div class="row">
+      <div class="col col_footer">Секция 1</div>
+      <div class="col col_footer">Секция 2</div>
+      <div class="col col_footer">Секция 3</div>
+      <div class="col col_footer">Секция 4</div>
+    </div>
+
   </footer>
 </body>
 
 </html>
-
